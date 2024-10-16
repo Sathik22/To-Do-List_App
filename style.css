@@ -3,14 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+
+   
 }
 
 .container {
     max-width: 100%;
     min-height: 100vh;
-    background: linear-gradient(140deg, rgb(233, 141, 233), rgb(84, 1, 59));
+    background: black;
     padding: 10px;
+    position: relative;
 }
+
+
+
 
 .todo-app {
     max-width: 540px;
@@ -21,16 +27,22 @@
     border-radius: 10px;
 }
 
+
 .todo-app h2 {
+    height: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     color: #002765;
     margin-bottom: 20px;
+    justify-content: center;
 }
 
 .todo-app h2 img {
     width: 43px;
     margin-left: 10px;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 .row {
@@ -108,4 +120,27 @@ li span{
 }   
 ul li span:hover{
     background: #edeef0;
+}
+.shinchan{
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+    width: 100vw; 
+    position: fixed;
+    bottom: 0;
+    animation: imgGif 20s linear infinite;
+    background: repeat-x;
+
+}
+.shinchan img{
+    height: 200px;
+}
+@keyframes imgGif 
+{
+    100%{
+        transform: translateX(-1500px);
+    }
+    0%{
+        transform: translateX(10x);
+    }
 }
